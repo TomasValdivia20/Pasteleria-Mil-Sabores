@@ -1,0 +1,40 @@
+.mosaico{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgpeque {
+display: flex;
+justify-content: space-evenly;
+width: 100%;
+flex-direction: column;
+}
+
+.imggrande {
+background-color: #8B4513;
+width: 1000px;
+height: 1000px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 10px;
+}
+
+.imagen-pequena{
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+}
+
+.colorEmp{
+    background-color: #FFF5E1;
+}
+
+.colorAcen1{
+    color: #FFC0CB;
+}
+
+.colorAcen2{
+    color: #8B4513
+}
