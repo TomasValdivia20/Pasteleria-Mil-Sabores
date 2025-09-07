@@ -150,3 +150,25 @@
   }); // End of a document
 
 })(jQuery);
+
+//Elementos de formulario//
+let registrar = document.getElementById("registrar");
+let iniciarsesion = document.getElementById("iniciarsesion");
+let inputNombre = document.getElementById("inputNombre");
+let inputCorreo = document.getElementById("inputCorreo");
+let inputContra = document.getElementById("inputContra");
+let registroformulario = document.getElementById("registroformulario");
+
+iniciarsesion.onclick = function(){
+  inputNombre.style.maxHeight = "0";
+  registroformulario.innerHTML = "Inicio de sesión";
+  registrar.classList.add("disable");
+  iniciarsesion.classList.remove("disable");
+}
+
+registrar.onclick = function(){
+  inputNombre.style.maxHeight = "60px";
+  registroformulario.innerHTML = "Registro";
+  registrar.classList.add("disable");
+  iniciarsesion.classList.remove("disable");
+}

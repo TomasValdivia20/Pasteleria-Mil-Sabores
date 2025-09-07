@@ -721,6 +721,8 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
+
+/* Flex y manejo de imágenes */
 .mosaico{
     display:flex;
     flex-direction: row;
@@ -735,13 +737,9 @@ flex-direction: column;
 }
 
 .imggrande {
-background-color: #8B4513;
-width: 1000px;
-height: 1000px;
+width: 550px;
+height: 300px;
 display: flex;
-justify-content: center;
-align-items: center;
-margin-right: 10px;
 }
 
 .imagen-pequena{
@@ -750,6 +748,7 @@ margin-right: 10px;
     margin-top: 5px;
 }
 
+/* Colores de fuente y fondo */
 .colorEmp{
     background-color: #FFF5E1;
 }
@@ -770,17 +769,7 @@ margin-right: 10px;
     color: #B0BEC5
 }
 
-.lato-thin {
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.lato-light {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
+/* Fuentes (Lato es principal, Pacifico para encabezados) */
 
 .lato-regular {
   font-family: "Lato", sans-serif;
@@ -788,50 +777,124 @@ margin-right: 10px;
   font-style: normal;
 }
 
-.lato-bold {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.lato-black {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.lato-thin-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.lato-light-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.lato-regular-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.lato-bold-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.lato-black-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
 
 .pacifico-regular {
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+.padHist{
+    padding-left: 270px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Formulario */
+.formulario{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.form-Container{
+  width: 100%;
+  height: 100vh;
+  background-color: #FFC43F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-Content{
+  width: 100%;
+  max-width: 450px;
+  background-color: #FFC0CB;
+  padding: 50px 60px 70px;
+  text-align: center;
+  border-radius: 25px;
+  color:white;
+}
+
+.form-Content h1{
+  font-size: 30px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.form-Content h1::after{
+  content: '';
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background: #5D4037;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input-field{
+  background-color:#787878;
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+
+input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: none;
+  padding: 18px 15px;
+  color:white
+}
+
+input::placeholder{
+  color: white;
+}
+
+.input-field i{
+  margin-left: 15px;
+  color: #FFC0CB;
+}
+
+form p{
+  color:#333;
+  text-align: left;
+  font-size: 14px;
+}
+
+form p a{
+  margin-left: 5px;
+}
+
+.btn-field{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-field button{
+  flex-basis: 45%;
+  font-size: 16px;
+  background-color:beige;
+  color: #000;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 1s;
+}
+
+.input-group{
+  height: 250px;
+}
+
+.btn-field button.disable {
+  background-color: yellow;
 }
