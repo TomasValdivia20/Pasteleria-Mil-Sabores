@@ -898,3 +898,57 @@ form p a{
 .btn-field button.disable {
   background-color: yellow;
 }
+
+/* Display de página de torta */
+.producto-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #fff8f8;
+}
+.producto-container img {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  margin-right: 30px;
+}
+.producto-info {
+  max-width: 500px;
+}
+.producto-info h2 {
+  font-size: 28px;
+  color: #a1122c;
+  margin-bottom: 10px;
+}
+.producto-info p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+.producto-info .precio {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #222;
+  font-weight: bold;
+}
+.btn-comprar {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #a1122c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.btn-comprar:hover {
+  background-color: #7e0d20;
+}
