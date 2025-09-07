@@ -699,8 +699,8 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
-/* single product */
-/* product-thumbnail-slider */
+/* Producto singular */
+/* Slider de miniatura de producto */
 .product-thumbnail-slider {
   height: 740px;
 }
@@ -743,6 +743,7 @@ display: flex;
 }
 
 .imagen-pequena{
+    display: flex;
     width: 200px;
     height: 200px;
     margin-top: 5px;
@@ -788,6 +789,12 @@ display: flex;
     padding-left: 270px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+/* Carousel */
+
+.carrusel{
+  color:aqua;
 }
 
 /* Formulario */
@@ -951,4 +958,72 @@ form p a{
 }
 .btn-comprar:hover {
   background-color: #7e0d20;
+}
+
+/* Historia*/
+
+.historia-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  max-width: 1250px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #fff8f8;
+}
+
+.historia-contenido{
+  width: 100%;
+  max-width: 450px;
+  background-color: #FFC0CB;
+  padding: 50px 60px 70px;
+  text-align: center;
+  border-radius: 25px;
+  color:white;
+}
+
+/* Campaña de registro en Index*/
+.registrate-aqui{
+  font-size: 28px;
+}
+
+.flex{
+  display: flex;
+}
+
+/* Frente de pagina */
+
+/* Garantias */
+.centralizar{
+  align-items: center;
+  justify-content: center;
+}
+
+.fondo-g{
+  background-color: beige;
+  border-radius: 3px;
+}
+
+.fondo-frase{
+  background-color:#ecc9af;
+  border-radius: 3px;
+}
+
+.pad-garantias{
+  width: 75px;
+  padding: 5px;
+}
+
+/* Final */
+
+.pad-final{
+  display: flex;
+  margin: 40px auto;
+  padding: 5px;
+  width: 300px;
+  height: auto;
+  margin-right: 30px;
 }
